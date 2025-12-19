@@ -9,10 +9,12 @@ from task.app.main import run
 #  User massage: Name a random animal
 
 run(
-    deployment_name='gpt-4o',
+    deployment_name="gpt-4o",
     # TODO:
     #  1. Use `seed` parameter with value 42 (or whatever you want)
     #  2. Use `n` parameter with value 5
+    seed=42,
+    n=5,
 )
 
 # Check the content in choices. The expected result is that in almost all choices the result will be the same.
